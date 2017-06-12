@@ -1,0 +1,153 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec} 
+\usepackage{gensymb}
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=9.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+%%% modified by Karol Kozioł for ShareLaTeX use
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm, 
+bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={CDS.CV},
+	pdfauthor={Jesus David Prada Gonzalez},
+]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+
+% DOCUMENT
+\begin{document}
+
+
+{\LARGE Jesus David Prada Gonzalez}\\[1cm]
+ Universidad de los Andes\\
+Physics Department\\
+Cra 1 N$^{\circ}$ 18A- 12, Bogota D.C.\\
+Phone: \texttt{+57 3204737920}\\
+email: \href{mailto:c.jd.prada1760@uniandes.edu.co}{jd.prada1760@uniandes.edu.co}\\
+\textsc{url}: \href{https://github.com/jdprada1760/}{https://github.com/jdprada1760/}\\
+
+Born:  March 8, 1995-Barrancabermeja, Colombia\\
+Nationality: Colombian
+
+%%\hrule
+\section*{Current position}
+\emph{Physics Masters Student}, Universidad de los Andes
+
+%%\hrule
+\section*{Areas of specialization}
+ Theoretical physics • Quantum Mechanics • Extragalactic Astrophysics • Computational Astrophysics
+
+
+%\hrule
+\section*{Education}
+\noindent
+
+\years{2012-2016}\textsc{Bachelor} in Physics, Universidad de los Andes. GPA 4.66/5.0 \\
+
+\years{2016-Ongoing}\textsc{Student} of Masters in Physics, Universidad de los Andes. GPA 4.78/5.0 \\
+
+\section*{Research}
+\noindent
+
+\years{Summer 2015} {Research Experiences for Undergraduates (REU) program at Cornell University}: Comparison of the Schechter parameters of Halo mass function in different Halo environments from the Millennium Simulation. Advisers: Martha Haynes, Michael Jones \& David Chernov.\\
+
+\years{Ongoing} Publication: The influence of the environment on the HI mass functions in cosmological simulations. Collaborators: Martha Haynes, Michael Jones, Ricardo Giovanelly \& Jaime Forero.\\
+
+\section*{Schools \& Events}
+\years{Dec 2014} Presentation at COCOA (Colombian Congress of Astronomy and Astrophysics by its initials
+in spanish), Pasto, Nari\~no, Colombia: A Dark Matter density estimator that uses information from the phase space. Advisor: Jaime Forero.\\
+
+\years{Oct 2016} Presentation at Latin American XV Regional IAU Meeting (LARIM), Cartagena, Colombia: The influence of the environment on the HI mass functions in cosmological simulations. Collaborators: Martha Haynes, Michael Jones, Ricardo Giovanelly \& Jaime Forero.\\ 
+
+\section*{Computing \& Researcher Skills}
+
+Programming Languages: C, Python, Unix, SQL, Java, \LaTeX, Mathematica.\\
+
+Familiarized with: Millenium and Illustris databases \& Gadget-2.\\
+
+\section*{Service to the profession}
+
+
+\years{2013-2016}Professor’s assistant for basic and advanced physics courses at Universidad de los Andes:
+Physics II, Teaching Practice \& Analytical Mechanics\\
+
+\years{2013-2015} Teaching assistant in Cl\'inica de Problemas (Problem solving assistance for undergraduate
+students) at Universidad de los Andes.\\
+
+\years{2016-II} Professor of Experimental Physics I at Universidad de los Andes\\
+
+\years{2017-I} Professor of Computational Tools at Universidad de los Andes\\
+
+\section*{Grants \& awards}
+\noindent
+
+\years{2012} \textsc{Academic Excellence Distinction 2012-I} for obtaining the best GPA in the semester at Universidad de los Andes\\
+
+\section*{Languages}
+
+\textsc{Spanish}: Native 
+
+\textsc{English}: Fluent (TOEFL Test Score 102/120)
+
+\textsc{French}: Learning
+\section*{Personal Interests}
+
+Speed Cubing (solving the Rubik’s Cube as fast as possible).\\
+Machine Learning.\\
+Quantum Mechanics Foundations. \\
+French Language.\\ 
+
+
+\end{document}
